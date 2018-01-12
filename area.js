@@ -1,8 +1,9 @@
 
 
-function calcArea(params) {
-	var l1=params[0];
-	var l2=params[1];
+module.exports =function getArea(params) {
+	var area
+	var l1=parseInt(params[0]);
+	var l2=parseInt(params[1]);
 	var area;
 	//manca il caso in cui gli input siano due stringhe
 	if(l1>=0 && l2>=0){
@@ -11,9 +12,9 @@ function calcArea(params) {
 	else{
 		area=-1;
 	}
-	console.log(area);
+	return area
 
  	
   }
 
-calcArea([-2,0]);
+//calcArea([-2,0]);
